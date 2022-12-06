@@ -1,0 +1,88 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.navbar-container img {
+  width: 100px;
+  margin-left: 70px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-right: 150px;
+}
+
+.list-item {
+  list-style-type: none;
+  color: rgb(185, 181, 181);
+}
+
+.list-item:first-child {
+  color: #333;
+}
+
+.nav-button {
+  color: #fff;
+  background-color: #5955b3;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-right: 70px;
+}
+
+.banner-container {
+  display: flex;
+  margin-left: 110px;
+}
+
+.heading-text {
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: 70px;
+}
+
+.description {
+  color: rgb(185, 181, 181);
+  margin-top: 30px;
+  padding-right: 100px;
+}
+
+span {
+  color: #5955b3;
+}
+
+.banner-container img {
+  max-width: 700px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.btn {
+  margin-top: 70px;
+  padding: 15px 30px;
+}

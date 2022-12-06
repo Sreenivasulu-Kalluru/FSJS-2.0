@@ -1,0 +1,90 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Poppins';
+}
+
+.navbar {
+  background: #000000;
+  color: #fff;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.navbar img {
+  width: 80px;
+}
+
+.line {
+  border: 1px solid #fff;
+  height: 40px;
+  background-color: #fff;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-right: 200px;
+}
+
+.list-item {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.list-item:first-child::after {
+  content: '⌄';
+  padding-left: 4px;
+  position: relative;
+  bottom: 4px;
+}
+
+.button-small {
+  background-color: #ba0cc5;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+}
+
+.hero {
+  background: url('./assets/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  padding: 100px;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+}
+
+.hero-description {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.button-large {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: #ba0cc5;
+  color: #fff;
+  font-size: 25px;
+}
