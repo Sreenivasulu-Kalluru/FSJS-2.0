@@ -15,4 +15,4 @@ A landing page designed using pure HTML & CSS as part of **[iNeuron](https://ine
 
 ### Output :
 
-[![Output Image](./output.png)](https://vsk-justice.netlify.app/)
+[![Output Image](./Output.png)](https://vsk-justice.netlify.app/)
