@@ -13,30 +13,34 @@
   </head>
   <body>
     <nav
-      class="sticky top-0 z-10 flex h-[48px] align-center justify-between px-[50px] bg-[#2c2c32] shadow-md text-white"
+      class="sticky top-0 z-10 flex h-[48px] items-center justify-between px-[30px] bg-[#2c2c32] shadow-md text-white"
     >
-      <img
-        src="./img/file_type_vscode_icon_130084.png"
-        alt=""
-        class="w-[30px] h-[30px] mt-[9px]"
-      />
-      <h3 class="text-white text-xl ml-[-160px] pt-[10px]">
-        Visual Studio Code
-      </h3>
+      <div class="flex justify-center items-center gap-x-4 pb-[10px]">
+        <div
+          class="flex justify-center items-center hover:cursor-pointer gap-x-2"
+        >
+          <img
+            src="./img/file_type_vscode_icon_130084.png"
+            alt=""
+            class="w-[30px] h-[30px] mt-[9px]"
+          />
+          <h3 class="text-white text-xl pt-[10px]">Visual Studio Code</h3>
+        </div>
 
-      <ul
-        class="flex text-[#969ba5] font-[500] text align-center justify-around gap-[20px] ml-[-150px] pt-[10px] mt-[3px] hover:cursor-pointer"
-      >
-        <li class="hover:text-[#fff] duration-300">Docs</li>
-        <li class="hover:text-[#fff] duration-300">Updates</li>
-        <li class="hover:text-[#fff] duration-300">Blog</li>
-        <li class="hover:text-[#fff] duration-300">API</li>
-        <li class="hover:text-[#fff] duration-300">Extensions</li>
-        <li class="hover:text-[#fff] duration-300">FAQ</li>
-        <li class="hover:text-[#fff] duration-300">Learn</li>
-      </ul>
+        <ul
+          class="hidden lg:flex text-[#969ba5] font-[500] justify-around gap-[20px] pt-[10px] mt-[3px] hover:cursor-pointer"
+        >
+          <li class="hover:text-[#fff] duration-300">Docs</li>
+          <li class="hover:text-[#fff] duration-300">Updates</li>
+          <li class="hover:text-[#fff] duration-300">Blog</li>
+          <li class="hover:text-[#fff] duration-300">API</li>
+          <li class="hover:text-[#fff] duration-300">Extensions</li>
+          <li class="hover:text-[#fff] duration-300">FAQ</li>
+          <li class="hover:text-[#fff] duration-300">Learn</li>
+        </ul>
+      </div>
 
-      <div class="flex justify-end">
+      <div class="flex justify-end max-md:hidden">
         <div class="flex bg-[#3c3c3c]">
           <img
             src="https://code.visualstudio.com/assets/icons/search.svg"
@@ -48,11 +52,11 @@
           <input
             type="text"
             placeholder="Search Docs"
-            class="bg-[#3c3c3c] inline-block text-white py-3 px-3 w-[170px] focus:outline-none"
+            class="bg-[#3c3c3c] inline-block text-white py-3 px-3 w-[130px] focus:outline-none"
           />
         </div>
         <button
-          class="bg-[#005ba4] text-white font-[500] py-3 px-[17px] w-[130px] hover:bg-[#04578f]"
+          class="bg-[#005ba4] text-white font-[500] py-3 px-[17px] w-[140px] hover:bg-[#04578f]"
         >
           <img
             src="https://code.visualstudio.com/assets/icons/download.svg"
@@ -64,58 +68,76 @@
           Download
         </button>
       </div>
+      <div
+        class="flex rounded-md flex-col items-center justify-between hamburger p-2 md:hidden lg:hidden hover:cursor-pointer"
+      >
+        <div class="line h-[3px] w-6 my-0.5 bg-white"></div>
+        <div class="line h-[3px] w-6 my-0.5 bg-white"></div>
+        <div class="line h-[3px] w-6 my-0.5 bg-white"></div>
+      </div>
     </nav>
 
     <!-- Quotation -->
-    <div class="bg-[#25252b] text-center text-[#fff] py-[7px]">
+    <div
+      class="bg-[#25252b] text-center text-[#fff] py-[7px] max-md:text-[14px] max-md:px-[20px]"
+    >
       For
       <span
-        class="text-[#24abf2] font-[600] text-lg hover:cursor-pointer hover:underline"
+        class="text-[#24abf2] font-[600] text-lg max-md:text-[16px] hover:cursor-pointer hover:underline max"
         >Educational</span
       >
       Purpose Only! As a part of iNeuron FSJS 2.0 Course.
     </div>
 
     <!-- Hero Section -->
-    <section class="flex py-[45px] px-[80px] drop-shadow-md bg-[#2c2c32]">
-      <div class="section-left text-center">
+    <section
+      class="box-border lg:flex py-[45px] px-[80px] max-md:py-[10px] max-md:px-[30px] drop-shadow-md bg-[#2c2c32]"
+    >
+      <div class="section-left text-center max-md:text-center max-md:mx-auto">
         <h1
-          class="text-[50px] text-[#fff] font-[300] leading-[53px] mt-[20px] ml-[30px]"
+          class="text-[50px] max-md:text-[30px] text-[#fff] font-[300] leading-[53px] mt-[20px] ml-[30px]"
         >
           Code editing. <br />
-          <span class="ml-[30px] font-[400]">Redefined.</span>
+          <span class="ml-[30px] max-md:ml-[0] font-[400]">Redefined.</span>
         </h1>
-        <p class="text-[#969ba5] text-[18px] mt-[10px]">
+        <p class="text-[#969ba5] text-[18px] max-md:text-[15px] mt-[10px]">
           Free. Built on open source. Runs everywhere.
         </p>
+        <div class="max-md:mx-[auto] max-md:ml-[40px]">
+          <button
+            class="max-md:text-[14px] max-md:ml-[-20px] max-md:relative max-md:mx-auto bg-[#005ba4] hover:bg-[#04578f] text-[#fff] text-[18px] py-[10px] px-[25px] font-[500] mt-[15px] ml-[30px]"
+          >
+            Download for Windows <br /><span class="font-[200] text-[12px]"
+              >Stable Build</span
+            >
+          </button>
+
+          <i
+            class="max-md:pt-[23px] max-md:pb-[21px] fa-regular hover:bg-[#04578f] hover:cursor-pointer fa-chevron-down text-white font-[FontAwesome] bg-[#005ba4] text-[#fff] text-[18px] pt-[28px] pb-[29px] px-[15px] font-[500] relative top-[13px] right-[2px]"
+          ></i>
+        </div>
+
         <button
-          class="bg-[#005ba4] hover:bg-[#04578f] text-[#fff] text-[18px] py-[10px] px-[25px] font-[500] mt-[15px] ml-[30px]"
+          class="bg-[#25252b] mt-[15px] ml-[30px] text-[#969ba5] rounded-md py-[8px] px-[8px] text-[14px] max-md:text-[12px]"
         >
-          Download for Windows <br /><span class="font-[200] text-[12px]"
-            >Stable Build</span
-          >
+          <p>
+            <a
+              href="https://code.visualstudio.com/"
+              class="text-[#0b94ff] hover:underline"
+              >Web</a
+            >,
+            <a
+              href="https://code.visualstudio.com/"
+              class="text-[#0b94ff] hover:underline"
+              >Insiders edition</a
+            >, or
+            <a
+              href="https://code.visualstudio.com/"
+              class="text-[#0b94ff] hover:underline"
+              >other platforms</a
+            >
+          </p>
         </button>
-
-        <i
-          class="fa-regular hover:bg-[#04578f] hover:cursor-pointer fa-chevron-down text-white font-[FontAwesome] bg-[#005ba4] text-[#fff] text-[18px] pt-[28px] pb-[29px] px-[15px] font-[500] relative top-[13px] right-[2px]"
-        ></i>
-
-        <p
-          class="bg-[#25252b] rounded-md w-[296px] ml-[42px] text-[#969ba5] py-[8px] px-[8px] mt-[15px]"
-        >
-          <span
-            class="text-[#0b94ff] text-[14px] hover:cursor-pointer hover:underline"
-            >Web</span
-          >,
-          <span
-            class="text-[#0b94ff] text-[14px] hover:cursor-pointer hover:underline"
-            >Insiders edition</span
-          >, or
-          <span
-            class="text-[#0b94ff] text-[14px] hover:cursor-pointer hover:underline"
-            >other platforms</span
-          >
-        </p>
 
         <p class="text-[#969ba5] text-[12px] mt-[15px] ml-[40px]">
           By using VS Code, you agree to its <br />
@@ -127,16 +149,20 @@
       </div>
 
       <div class="section-right">
-        <img src="./img/vs code image.png" alt="" class="w-[700px] ml-[40px]" />
+        <img
+          src="./img/vs code image.png"
+          alt=""
+          class="w-[700px] max-md:w-[617px] ml-[40px] max-md:ml-0 max-md:mt-[30px]"
+        />
       </div>
     </section>
 
     <!-- Features -->
-    <section class="flex justify-evenly bg-[#ffffff]">
+    <section class="max-lg:flex-wrap flex justify-evenly bg-[#ffffff]">
       <img
         src="./img/intellisense vs code.png"
         alt=""
-        class="w-[150px] h-[120px] hover:cursor-pointer"
+        class="w-[150px] h-[120px] max-md:wihover:cursor-pointer"
       />
       <img
         src="./img/run and debug vs code.png"
@@ -160,49 +186,49 @@
       class="flex items-center py-[80px] px-[50px] justify-between bg-[#f5f5f5]"
     >
       <i
-        class="fa-sharp fa-solid fa-chevron-left font-[FontAwesome] text-[#8c8c8c] font-bold text-[1.5rem] mr-[20px] items-center hover:cursor-pointer"
+        class="fa-sharp fa-solid fa-chevron-left text-[#8c8c8c] font-[FontAwesome] font-bold text-[1.5rem] mr-[20px] items-center hover:cursor-pointer"
       ></i>
-      <div class="flex">
-        <div>
-          <h3 class="font-[700] hover:text-[#0072be] hover:cursor-pointer">
-            Una Kravets
-          </h3>
-          <span class="text-[#969ba5] text-[10px]">@Una</span>
-          <p class="text-[#969ba5]">
-            VS @code does so many things right. I’m constantly impressed by the
-            UX, and customizing workspace / user preferences is no exception.
-            🙌🏼💯 It just keeps getting better ❤️
-          </p>
+      <div class="flex gap-[30px] max-md:flex-col">
+        <div class="flex">
+          <div>
+            <h3 class="font-[700] hover:text-[#0072be] hover:cursor-pointer">
+              Una Kravets
+            </h3>
+            <span class="text-[#969ba5] text-[10px]">@Una</span>
+            <p class="text-[#969ba5]">
+              VS @code does so many things right. I’m constantly impressed by
+              the UX, and customizing workspace / user preferences is no
+              exception. 🙌🏼💯 It just keeps getting better ❤️
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="flex">
-        <div class="px-[20px]"></div>
-        <div>
-          <h3 class="font-[700] hover:text-[#0072be] hover:cursor-pointer">
-            Jonathan Dunlap
-          </h3>
-          <span class="text-[#969ba5] text-[10px]">@jadbox</span>
-          <p class="text-[#969ba5]">
-            VS Code will have deep remote development. You can connect to a
-            container running a different OS and use any VS Code plugins,
-            linting, debugging for that environment. 🔥🔥🔥
-          </p>
+        <div class="flex">
+          <div>
+            <h3 class="font-[700] hover:text-[#0072be] hover:cursor-pointer">
+              Jonathan Dunlap
+            </h3>
+            <span class="text-[#969ba5] text-[10px]">@jadbox</span>
+            <p class="text-[#969ba5]">
+              VS Code will have deep remote development. You can connect to a
+              container running a different OS and use any VS Code plugins,
+              linting, debugging for that environment. 🔥🔥🔥
+            </p>
+          </div>
         </div>
-      </div>
 
-      <div class="flex">
-        <div class="px-[20px]"></div>
-        <div>
-          <h3 class="font-[700] hover:text-[#0072be] hover:cursor-pointer">
-            Pavithra Kodmad
-          </h3>
-          <span class="text-[#969ba5] text-[10px]">@PKodmad</span>
-          <p class="text-[#969ba5]">
-            VS Code is my most used and favorite editor. I love being able to
-            customize the editor - changing the layout, the icons, fonts and
-            color scheme is so easy!
-          </p>
+        <div class="flex">
+          <div>
+            <h3 class="font-[700] hover:text-[#0072be] hover:cursor-pointer">
+              Pavithra Kodmad
+            </h3>
+            <span class="text-[#969ba5] text-[10px]">@PKodmad</span>
+            <p class="text-[#969ba5]">
+              VS Code is my most used and favorite editor. I love being able to
+              customize the editor - changing the layout, the icons, fonts and
+              color scheme is so easy!
+            </p>
+          </div>
         </div>
       </div>
       <i
@@ -211,11 +237,14 @@
     </section>
 
     <!-- Features Explaination -->
-    <section class="flex bg-[#ffffff] py-[80px] px-[60px]">
+    <section
+      class="flex max-md:flex-col max-md:items-center bg-[#ffffff] py-[80px] max-md:py-[30px] px-[60px]"
+    >
       <div>
         <svg
           width="360"
           height="235"
+          class="max-md:w-[250px]"
           viewBox="0 0 360 235"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -348,11 +377,13 @@
           />
         </svg>
       </div>
-      <div class="ml-[120px]">
-        <h2 class="text-[30px] font-[100] mt-[-20px] mb-[40px]">
+      <div class="ml-[120px] max-md:text-left max-md:ml-[0]">
+        <h2
+          class="text-[30px] max-md:text-[25px] max-sm:text-[20px] font-[100] mt-[-20px] mb-[40px] max-md:mb-[10px]"
+        >
           Meet IntelliSense.
         </h2>
-        <p class="text-[20px] leading-[40px]">
+        <p class="text-[20px] max-md:text-[16px] leading-[40px]">
           Go beyond syntax highlighting and autocomplete with IntelliSense,
           which provides smart completions based on variable types, function
           definitions, and imported modules.
@@ -360,21 +391,28 @@
       </div>
     </section>
 
-    <section class="flex bg-[#f5f5f5] py-[80px] px-[60px]">
-      <div>
-        <h2 class="text-[30px] font-[100] mt-[-20px] mb-[40px]">
+    <section
+      class="flex bg-[#f5f5f5] max-md:flex-col max-md:items-center py-[80px] max-md:py-[30px] px-[60px]"
+    >
+      <div class="max-md:text-left">
+        <h2
+          class="text-[30px] max-md:text-[25px] max-sm:text-[20px] font-[100] mb-[40px] max-md:mb-[10px]"
+        >
           Print statement debugging is a thing of the past.
         </h2>
-        <p class="text-[20px] leading-[40px]">
+        <p
+          class="text-[20px] max-md:text-[16px] max-md:mb-[10px] leading-[40px]"
+        >
           Debug code right from the editor. Launch or attach to your running
           apps and debug with break points, call stacks, and an interactive
           console.
         </p>
       </div>
 
-      <div>
+      <div class="max-md:mt-0 max-md:mb-0">
         <svg
           width="360"
+          class="max-md:w-[250px]"
           height="235"
           viewBox="0 0 360 235"
           fill="none"
@@ -559,10 +597,13 @@
       </div>
     </section>
 
-    <section class="flex bg-[#ffffff] py-[80px] px-[60px]">
+    <section
+      class="flex bg-[#ffffff] max-md:flex-col max-md:items-center py-[80px] px-[60px] max-md:py-[30px]"
+    >
       <div>
         <svg
           width="360"
+          class="max-md:w-[250px]"
           height="235"
           viewBox="0 0 360 235"
           fill="none"
@@ -828,11 +869,13 @@
           />
         </svg>
       </div>
-      <div class="ml-[120px]">
-        <h2 class="text-[30px] font-[100] mt-[-20px] mb-[40px]">
+      <div class="ml-[120px] max-md:text-left max-md:ml-[0]">
+        <h2
+          class="text-[30px] font-[100] mt-[-20px] mb-[40px] max-md:text-[25px] max-sm:text-[20px] max-md:mb-[10px]"
+        >
           Git commands built-in.
         </h2>
-        <p class="text-[20px] leading-[40px]">
+        <p class="text-[20px] max-md:text-[16px] leading-[40px]">
           Working with Git and other SCM providers has never been easier. Review
           diffs, stage files, and make commits right from the editor. Push and
           pull from any hosted SCM service.
@@ -840,37 +883,46 @@
       </div>
     </section>
 
-    <section class="flex bg-[#f5f5f5] py-[80px] px-[60px]">
-      <div class="w-[98%]">
-        <h2 class="text-[30px] font-[100] mt-[-20px] mb-[40px]">
+    <section
+      class="flex bg-[#f5f5f5] max-md:flex-col max-md:items-center py-[80px] px-[60px] max-md:py-[40px]"
+    >
+      <div class="w-[98%] max-md:text-left max-md:ml-[0]">
+        <h2
+          class="text-[30px] font-[100] mt-[-20px] mb-[40px] max-md:mb-0 max-md:text-[25px] max-sm:text-[20px]"
+        >
           Extensible and customizable.
         </h2>
-        <p class="text-[20px] pr-[100px] leading-[40px]">
+        <p
+          class="text-[20px] pr-[100px] max-md:pr-[0] leading-[40px] max-md:text-[16px]"
+        >
           Want even more features? Install extensions to add new languages,
           themes, debuggers, and to connect to additional services. Extensions
           run in separate processes, ensuring they won't slow down your editor.
           <span
-            class="text-[#0b94ff] text-[20px] hover:text-[#0099cf] hover:cursor-pointer hover:underline"
+            class="text-[#0b94ff] text-[20px] hover:text-[#0099cf] hover:cursor-pointer hover:underline max-md:text-[16px]"
             >Learn more about extensions.</span
           >
         </p>
       </div>
 
-      <div>
+      <div class="max-md:mt-[50px]">
         <img
           src="https://code.visualstudio.com/assets/images/Hundreds-of-Extensions.png"
           alt=""
           width="500px"
           height="400px"
-          class="hover:cursor-pointer hover:scale-[104%] ease-in-out duration-300"
+          class="hover:cursor-pointer hover:scale-[104%] ease-in-out duration-300 hover:cursor-pointer hover:scale-[104%] ease-in-out duration-300"
         />
       </div>
     </section>
 
-    <section class="flex bg-[#ffffff] py-[80px] px-[60px]">
+    <section
+      class="flex bg-[#ffffff] max-md:flex-col max-md:items-center py-[80px] px-[60px] max-md:py-[30px]"
+    >
       <div>
         <svg
           width="360"
+          class="max-md:w-[250px]"
           height="235"
           viewBox="0 0 360 235"
           fill="none"
@@ -1126,21 +1178,23 @@
           />
         </svg>
       </div>
-      <div class="ml-[120px]">
-        <h2 class="text-[30px] font-[100] mt-[-20px] mb-[40px]">
+      <div class="ml-[120px] max-md:text-center max-md:ml-[0]">
+        <h2
+          class="text-[30px] font-[100] mt-[-20px] mb-[40px] max-md:mb-[10px] max-md:text-[25px] max-sm:text-[20px]"
+        >
           Deploy with confidence and ease
         </h2>
-        <p class="text-[20px] leading-[40px]">
+        <p class="text-[20px] max-md:text-[16px] leading-[40px]">
           With
           <span
-            class="text-[#0b94ff] text-[20px] hover:text-[#0099cf] hover:cursor-pointer hover:underline"
+            class="text-[#0b94ff] text-[20px] max-md:text-[16px] hover:text-[#0099cf] hover:cursor-pointer hover:underline"
             >Microsoft</span
           >
           Azure you can deploy and host your React, Angular, Vue, Node, Python
           (and more!) sites, store and query relational and document based data,
           and scale with serverless computing,
           <span
-            class="text-[#0b94ff] text-[20px] hover:text-[#0099cf] hover:cursor-pointer hover:underline"
+            class="text-[#0b94ff] text-[20px] max-md:text-[16px] hover:text-[#0099cf] hover:cursor-pointer hover:underline"
             >all from within VS Code.</span
           >
         </p>
@@ -1148,11 +1202,17 @@
     </section>
 
     <!-- VS Code For -->
-    <section class="bg-[#f5f5f5] py-[80px] px-[200px]">
-      <h2 class="text-[30px] text-center font-[100] mt-[-20px] mb-[30px]">
+    <section
+      class="bg-[#f5f5f5] py-[80px] px-[200px] max-md:py-[40px] max-md:px-[100px]"
+    >
+      <h2
+        class="text-[30px] text-center font-[100] mt-[-20px] mb-[30px] max-md:text-[25px]"
+      >
         VS Code For
       </h2>
-      <div class="row-top flex gap-[30px] justify-between">
+      <div
+        class="grid grid-cols-2 grid-rows-6 gap-10 mt-10 md:grid-rows-3 md:grid-cols-4 lg:grid-rows-2 lg:grid-cols-6 max-md:ml-"
+      >
         <div class="flex items-center">
           <img
             class="language-icon inline"
@@ -1216,9 +1276,7 @@
           />
           <p>C/C++</p>
         </div>
-      </div>
 
-      <div class="row-bottom flex gap-[30px] justify-between mt-[20px]">
         <div class="flex items-center">
           <img
             class="language-icon"
@@ -1230,7 +1288,7 @@
           <p>JSON</p>
         </div>
 
-        <div class="flex items-center ml-[12px]">
+        <div class="flex items-center">
           <img
             class="language-icon"
             src="	https://code.visualstudio.com/assets/icons/file-icons/powershell.svg"
@@ -1241,7 +1299,7 @@
           <p>Powershell</p>
         </div>
 
-        <div class="flex items-center ml-[-49px]">
+        <div class="flex items-center">
           <img
             class="language-icon"
             src="https://code.visualstudio.com/assets/icons/file-icons/html.svg"
@@ -1252,7 +1310,7 @@
           <p>HTML/CSS</p>
         </div>
 
-        <div class="flex items-center relative right-[65px]">
+        <div class="flex items-center">
           <img
             class="language-icon"
             src="https://code.visualstudio.com/assets/icons/file-icons/csharp.svg"
@@ -1263,7 +1321,7 @@
           <p>C#</p>
         </div>
 
-        <div class="flex items-center relative right-[30px]">
+        <div class="flex items-center">
           <img
             class="language-icon"
             src="	https://code.visualstudio.com/assets/icons/file-icons/php.svg"
@@ -1273,7 +1331,7 @@
           />
           <p>PHP</p>
         </div>
-        <div class="flex items-center relative right-[10px]">
+        <div class="flex items-center">
           <img
             class="language-icon"
             src="https://code.visualstudio.com/assets/icons/file-icons/yaml.svg"
@@ -1284,13 +1342,14 @@
           <p>YAML</p>
         </div>
       </div>
+
       <p
-        class="text-center mt-[30px] text-[#0b94ff] text-[20px] hover:text-[#0099cf] hover:cursor-pointer hover:underline"
+        class="text-center mt-[30px] text-[#0b94ff] text-[20px] hover:text-[#0099cf] hover:cursor-pointer hover:underline max-md:text-[16px]"
       >
         and many more languages on the Marketplace...
       </p>
       <button
-        class="bg-[#005ba4] text-center block mx-auto hover:bg-[#04578f] mt-[50px] text-[#fff] text-[18px] py-[15px] px-[35px] font-[500]"
+        class="bg-[#005ba4] text-center block mx-auto hover:bg-[#04578f] mt-[50px] text-[#fff] text-[18px] py-[15px] px-[35px] font-[500] max-md:text-[14px]"
       >
         Get Started Now
       </button>
@@ -1298,7 +1357,9 @@
 
     <!-- VS code for Operating System's -->
 
-    <section class="bg-[#ffffff] flex justify-around py-[60px] px-[150px]">
+    <section
+      class="bg-[#ffffff] flex max-md:flex-col justify-around py-[60px] px-[150px] max-md:py-[40px] max-md:px-[0px]"
+    >
       <!-- Windows -->
       <div class="flex flex-col items-center gap-[25px]">
         <img src="./img/windows-logo.png" alt="" width="100px" height="100px" />
@@ -1373,8 +1434,14 @@
 
       <!--Linux  -->
       <div class="flex flex-col items-center gap-[25px]">
-        <img src="./img/linux-logo.png" alt="" width="100px" height="100px" />
-        <div class="mt-[-20px]">
+        <img
+          src="./img/linux-logo.png"
+          alt=""
+          width="100px"
+          height="100px"
+          class="max-md:mt-[15px]"
+        />
+        <div class="mt-[-20px] max-md:mt-0">
           <button
             class="bg-[#005ba4] text-white font-[500] py-3 px-[17px] w-[160px] hover:bg-[#04578f]"
           >
@@ -1467,8 +1534,16 @@
       </div>
 
       <!-- Apple -->
-      <div class="flex flex-col items-center gap-[25px] mt-[-22px]">
-        <img src="./img/apple-logo.svg" alt="" width="100px" height="100px" />
+      <div
+        class="flex flex-col items-center gap-[25px] mt-[-22px] max-md:mt-[0px]"
+      >
+        <img
+          src="./img/apple-logo.svg"
+          alt=""
+          width="100px"
+          height="100px"
+          class="max-md:mt-[15px]"
+        />
         <button
           class="bg-[#005ba4] text-white font-[500] py-3 px-[17px] w-[220px] hover:bg-[#04578f]"
         >
@@ -1508,8 +1583,10 @@
     </section>
 
     <!-- Above Footer -->
-    <section class="bg-[#f5f5f5] py-[50px] px-[50px]">
-      <div class="top flex justify-around">
+    <section
+      class="bg-[#f5f5f5] py-[50px] max-md:py-[30px] max-md:px-[30px] px-[50px] max-md:text-center"
+    >
+      <div class="top flex max-md:flex-col justify-around">
         <div class="left leading-[40px]">
           <h2 class="text-[19px] font-[600]">Want new features sooner?</h2>
           <p class="text-[17px]">
@@ -1534,7 +1611,9 @@
         </div>
       </div>
 
-      <div class="bottom text-center mt-[100px] px-[230px]">
+      <div
+        class="bottom text-center mt-[100px] max-md:mt-[30px] px-[230px] max-md:px-[30px]"
+      >
         <h3 class="text-[14px] font-[500] text-[#706c6c]">
           LICENSE AND PRIVACY TERMS
         </h3>
@@ -1563,9 +1642,9 @@
 
     <!-- Footer -->
     <footer
-      class="bg-[#333333] flex justify-between text-[#fff] pt-[25px] py-[20px] px-[40px]"
+      class="bg-[#333333] flex justify-between max-md:flex-col max-md:justify:start text-[#fff] pt-[25px] py-[20px] px-[40px] max-md:px-0 max-md:gap-[10px]"
     >
-      <div class="left px-[20px]">
+      <div class="left px-[0px]">
         <span class="text-[14px] px-[13px]">Hello from Seattle.</span>
         <a
           href="#"
@@ -1591,8 +1670,8 @@
         </button>
       </div>
 
-      <div class="right flex">
-        <ul class="flex gap-[30px]">
+      <div class="right flex px-[20px] max-md:mt-[15px]">
+        <ul class="flex gap-[30px] max-md:gap-[10px]">
           <li>
             <a href="#" class="text-[12px] hover:text-[#939dff] duration-300"
               >Support</a
