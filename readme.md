@@ -8,12 +8,16 @@ I am <h1 style="color:orange; text-shadow: 0 0 3px #FF0000">Sreenivasulu Kalluru
 
 To know more about me, you can check My Social Media Handles :
 
-## [LinkedIn](https://www.linkedin.com/in/vasu-k-8069201b0)
+## My Social Media Handles :
 
-## [Twitter](https://twitter.com/vasuk24)
+[![GitHub](https://img.shields.io/badge/github-Fork%20Me-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sreenivasulu-Kalluru)
 
-## [Instagram](https://www.instagram.com/iam_vs24/)
+[![LinkedIn](https://img.shields.io/badge/linkedin-Connect%20With%20Me-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/Sreenivasulu-Kalluru)
 
-## [Facebook](https://www.facebook.com/vasu.kalluru24)
+[![Hashnode](https://img.shields.io/badge/Hashnode-Follow%20Me-2962FF?style=for-the-badge&logo=hashnode&logoColor=white)](https://vasuk24.hashnode.dev/)
 
-## [Hashnode](https://hashnode.com/@VasuK24)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow%20Me-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/iam_vs24/)
+
+[![Facebook](https://img.shields.io/badge/Facebook-Follow%20Me-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/vasu.kalluru24)
+
+[![Twitter](https://img.shields.io/badge/Twitter-Tweet%20Me-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/vasuk24)
