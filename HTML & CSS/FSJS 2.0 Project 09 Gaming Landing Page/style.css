@@ -1,0 +1,449 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  max-width: 1440px;
+}
+
+ul {
+  list-style: none;
+}
+
+.section__hero {
+  height: 100vh;
+  background: url('./Assets/Photos/futuristic-bg.png') no-repeat center
+    center/cover;
+  padding: 2% 6% 4%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar ul {
+  color: #999a9c;
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 8rem;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  color: #999a9c;
+  height: 2.5rem;
+}
+
+.navbar .btn-orange {
+  background-color: #f4694c;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  /* height: 2.5rem; */
+}
+
+.section__hero--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 7rem;
+}
+
+.section__hero--left h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+.section__hero--left p {
+  color: #999a9c;
+  margin-top: 2rem;
+  line-height: 1.7;
+}
+
+.section__hero--container .btn-group {
+  margin-top: 2.5rem;
+}
+
+.btn-white-transparent {
+  color: #fff;
+  background-color: transparent;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+  height: 2.5rem;
+}
+
+.btn-orange {
+  background-color: #f4694c;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  height: 2.5rem;
+}
+
+.section__hero--right {
+  margin-top: 3rem;
+  justify-self: end;
+  position: relative;
+  right: 3rem;
+}
+
+.section__hero--right .play-button {
+  position: relative;
+  top: 2rem;
+  left: 4rem;
+}
+
+.section__hero--right .right-content {
+  margin-top: 12.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.section__hero--right .right-content .img-dash {
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.section__hero--right .right-content p {
+  color: #fff;
+}
+
+.section__hero--right .right-content .img-right-arrow {
+  align-self: end;
+  position: relative;
+  left: 1.5rem;
+}
+
+.section__war-games {
+  padding: 8% 6%;
+}
+
+.section__war-games h2 {
+  text-align: center;
+}
+
+.section__war-games .cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.section__war-games .cards-wrapper .card {
+  height: 350px;
+  width: 250px;
+  position: relative;
+}
+
+.section__war-games .cards-wrapper .card:nth-child(1) {
+  background: url('./Assets/Photos/image\ 2.png') right -80px center/cover no-repeat;
+}
+
+.section__war-games .cards-wrapper .card:nth-child(2) {
+  background: url('./Assets/Photos/image\ 4.png') center center/cover no-repeat;
+}
+
+.section__war-games .cards-wrapper .card:nth-child(3) {
+  background: url('./Assets/Photos/image\ 3.png') center center/cover no-repeat;
+}
+
+.section__war-games .cards-wrapper .card:nth-child(4) {
+  background: url('./Assets/Photos/Rectangle\ 56.png') center center/cover
+    no-repeat;
+}
+
+.section__war-games .cards-wrapper .card .card-bottom {
+  position: absolute;
+  bottom: 0;
+  backdrop-filter: blur(12px);
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.section__war-games .cards-wrapper .card .card-bottom h4,
+p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.section__war-games .cards-wrapper .card .card-bottom .right {
+  align-self: center;
+}
+
+.section__war-games .cards-wrapper .card .card-bottom .right button {
+  color: #fff;
+  background-color: #f4694c;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.section__war-games--bottom {
+  margin-top: 6rem;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section__war-games--bottom .left img {
+  max-width: 100%;
+}
+.section__war-games--bottom .right {
+  height: 100%;
+}
+
+.section__war-games--bottom .right h2 {
+  text-align: left;
+}
+
+.section__war-games--bottom .right p {
+  margin-top: 1rem;
+  color: black;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.section__war-games--bottom .right .btn-group {
+  margin-top: 2.5rem;
+}
+
+.section__war-games--bottom .right .btn-orange-transparent {
+  color: #f4694c;
+  background-color: transparent;
+  font-size: 1rem;
+  border: 1px solid #f4694c;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  box-sizing: border-box;
+  height: 2.5rem;
+}
+
+.section__recommended {
+  margin-top: 6rem;
+}
+
+.section__recommended--top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__recommended--top .arrows .left-arrow {
+  width: 3rem;
+  background-color: #fde1db;
+  padding: 1.3rem 1rem;
+  margin-right: 0.5rem;
+}
+
+.section__recommended--top .arrows .right-arrow {
+  width: 3rem;
+  background-color: #f4694c;
+  padding: 1.3rem 1rem;
+}
+
+.section__recommended h2 {
+  text-align: left;
+}
+
+.section__recommended--cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.section__recommended--cards .card-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.section__recommended--cards .card-wrapper .right {
+  align-self: center;
+}
+
+.section__recommended--cards .card-wrapper img {
+  width: 250px;
+  height: 100%;
+}
+
+.section__recommended--cards .card-wrapper .right h6 {
+  color: #f4694c;
+  margin-top: 1.5rem;
+}
+
+.section__recommended--cards .card-wrapper .right p {
+  color: black;
+  line-height: 1.9;
+  margin-top: 1.5rem;
+}
+
+.section__recommended--cards .card-wrapper .right button {
+  margin-top: 1.5rem;
+}
+
+/* Most Played Games Section */
+.section__most-played {
+  background-color: #000308;
+  padding: 4% 6% 6%;
+}
+
+.section__most-played h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.section__most-played .wrapper {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.section__most-played .wrapper .left img {
+  width: 400px;
+}
+
+.section__most-played .wrapper .right {
+  margin-top: 3rem;
+}
+.section__most-played .wrapper .right p {
+  color: #999a9c;
+}
+
+.section__most-played .wrapper .right .img-gow {
+  margin-top: 2rem;
+  height: 3.6rem;
+  position: relative;
+  right: 4.3rem;
+}
+
+.section__most-played .wrapper .right .right-imgs {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section__most-played .wrapper .right .right-imgs .img-1 {
+  width: 300px;
+  height: 400px;
+}
+
+.section__most-played .wrapper .right .right-imgs .img-2 {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  top: 9.5rem;
+}
+
+/* Section Above Footer */
+.section__above-footer {
+  position: relative;
+  background: url('./Assets/Photos/Rectangle\ 606.png') center center/cover
+    no-repeat;
+  padding: 4% 6% 12%;
+}
+
+.section__above-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+}
+
+.section__above-footer h2 {
+  text-align: center;
+  padding-top: 3rem;
+  color: #fff;
+  z-index: 5;
+  position: relative;
+}
+
+.section__above-footer p {
+  margin-top: 1rem;
+  text-align: center;
+  color: #999a9c;
+  z-index: 5;
+  position: relative;
+}
+.section__above-footer .btn-orange {
+  display: block;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+  top: 2rem;
+  bottom: 2rem;
+}
+
+/* Footer Section */
+.section__footer {
+  background-color: #000309;
+  padding: 4% 6%;
+}
+
+.section__footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__footer .footer-wrapper .group-logo p {
+  margin-top: 1rem;
+  color: #999a9c;
+  line-height: 1.7;
+}
+
+.section__footer .footer-wrapper .group-logo .social-icons img {
+  color: #999a9c;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.section__footer .footer-wrapper .links h6 {
+  color: #999a9c;
+  margin-bottom: 0.5rem;
+}
+
+.section__footer .footer-wrapper .links ul li {
+  color: #999a9c;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.horizontal-line-wrapper {
+  background-color: #000309;
+  height: 3rem;
+}
+
+.horizontal-line {
+  height: 1px;
+  background-color: #999a9c;
+  position: relative;
+  bottom: 0.3rem;
+  z-index: 4;
+}
