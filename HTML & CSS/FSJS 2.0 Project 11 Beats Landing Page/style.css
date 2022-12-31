@@ -56,6 +56,13 @@ ul {
   cursor: pointer;
 }
 
+.navbar ul li:hover,
+.navbar button:hover,
+.btn-cart:hover {
+  opacity: 0.7;
+  transition: all 0.7s;
+}
+
 .section__hero--header {
   display: flex;
   justify-content: space-around;

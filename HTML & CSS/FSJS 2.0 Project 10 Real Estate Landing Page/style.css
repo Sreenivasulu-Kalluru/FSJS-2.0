@@ -59,6 +59,12 @@ ul {
   color: #fff;
 }
 
+.section__hero .navbar ul li:hover {
+  cursor: pointer;
+  color: #6663e9;
+  transition: all 0.7s;
+}
+
 .horizontal-line {
   height: 2px;
   background-color: #6c6d69;
@@ -88,6 +94,11 @@ ul {
   padding: 1rem 2.3rem;
   border-radius: 30px;
   margin-top: 3rem;
+}
+
+.btn-purple:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 /* Logos Section */
@@ -185,8 +196,7 @@ ul {
 }
 
 .btn-purple {
-  border: none;
-  outline: none;
+  border: 1px solid #6663e9;
   background-color: #6663e9;
   color: #fff;
   padding: 1rem 2rem;
@@ -312,13 +322,20 @@ ul {
 }
 
 .section__news-letter form .btn-white {
-  border: none;
-  outline: none;
+  border: 1px solid #fff;
   background-color: #fff;
   color: #6663e9;
   font-weight: bold;
   padding: 1rem 2rem;
   border-radius: 30px;
+}
+
+.section__news-letter form .btn-white:hover {
+  cursor: pointer;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.7s;
 }
 
 /* Footer Section */
@@ -341,4 +358,9 @@ ul {
 .section__footer .links ul li,
 h4 {
   margin-bottom: 1rem;
+}
+
+.section__footer .links ul li:hover {
+  cursor: pointer;
+  color: #6663e9;
 }

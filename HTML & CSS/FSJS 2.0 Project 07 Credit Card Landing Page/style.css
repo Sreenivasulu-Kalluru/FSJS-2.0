@@ -28,10 +28,20 @@ nav {
   width: 100px;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
   gap: 3rem;
   list-style: none;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: #f637ec;
+  transition: ease-out 0.7s;
 }
 
 .fa-caret-down {
@@ -80,6 +90,11 @@ nav ul {
   padding: 0.7rem 1rem;
   margin-top: 60px;
   z-index: 4;
+}
+
+.btn-hero:hover,
+.btn-contact:hover {
+  cursor: pointer;
 }
 
 .btn-arrow {
@@ -297,6 +312,10 @@ nav ul {
   z-index: 4;
 }
 
+.btn-cta:hover {
+  cursor: pointer;
+}
+
 .btn-arrow {
   z-index: 4;
 }
@@ -340,4 +359,10 @@ nav ul {
   display: flex;
   gap: 3rem;
   list-style: none;
+}
+
+.section__footer ul li:hover {
+  cursor: pointer;
+  color: #f637ec;
+  transition: ease-out 0.7s;
 }

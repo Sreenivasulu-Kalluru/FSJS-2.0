@@ -9,6 +9,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  max-width: 1440px;
 }
 
 ul {
@@ -38,10 +39,15 @@ ul {
   margin-left: auto;
 }
 
+.navbar ul li:hover {
+  cursor: pointer;
+  color: #722ed1;
+  transition: all 0.7s;
+}
+
 .btn {
   background-color: transparent;
-  border: none;
-  outline: none;
+  border: 1px solid transparent;
   padding: 0.5rem 1rem;
   border-radius: 30px;
 }
@@ -50,6 +56,14 @@ ul {
   border: 1px solid #722ed1;
   background-color: transparent;
   margin-left: 2rem;
+}
+
+.navbar .btn-transparent:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #722ed1;
+  color: #fff;
+  transition: all 0.7s;
 }
 
 .hero-header {
@@ -92,9 +106,24 @@ ul {
   margin-right: 1rem;
 }
 
+.btn-pruple:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #722ed1;
+  color: #722ed1;
+  transition: all 0.7s;
+}
+
 .btn-white {
   background-color: #fff;
   color: #722ed1;
+}
+
+.btn-white:hover {
+  cursor: pointer;
+  background-color: #722ed1;
+  color: #fff;
+  transition: all 0.7s;
 }
 
 /* Features Section */
@@ -255,6 +284,10 @@ ul {
   cursor: pointer;
 }
 
+.form-container form .btn-form:hover {
+  opacity: 0.8;
+}
+
 .form-container form input {
   padding: 0.5rem;
   margin-top: 0.7rem;
@@ -304,6 +337,12 @@ img {
 .section__footer .footer__container .cols ul li {
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
+}
+
+.section__footer .footer__container .cols ul li:hover {
+  cursor: pointer;
+  color: #722ed1;
+  transition: all 0.7s;
 }
 
 .section__footer .footer__container .news-letter .cta {

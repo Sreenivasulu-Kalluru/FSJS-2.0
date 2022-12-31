@@ -41,18 +41,34 @@ nav ul li {
   font-size: 0.8rem;
 }
 
+nav ul li:hover {
+  color: #0c8bfd;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 500;
 }
 
 .btn-blue {
-  border: none;
   padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  display: inline-block;
   background-color: #0c8bfd;
   color: #fff;
   border-radius: 30px;
+  border: 1px solid #0c8bfd;
   font-weight: bold;
+}
+
+.btn-blue:hover {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #0c8bfd;
+  transition: all 0.7s;
+  cursor: pointer;
 }
 
 /* Hero Section */
@@ -86,7 +102,6 @@ h2 {
 }
 
 .btn-transparent {
-  border: none;
   padding: 0.7rem 1.5rem;
   background-color: transparent;
   color: #fff;
@@ -94,6 +109,14 @@ h2 {
   border-radius: 30px;
   font-weight: bold;
   margin-left: 1.5rem;
+}
+
+.btn-transparent:hover {
+  border: 1px solid #0c8bfd;
+  background-color: #0c8bfd;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
 .section__hero-right img {
@@ -302,13 +325,38 @@ h2 {
   width: 100%;
 }
 
-.btn-white {
-  border: none;
+.box .btn-primary {
   padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #0c8bfd;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #0c8bfd;
+  font-weight: bold;
+}
+
+.box .btn-blue:hover {
+  border: 1px solid #0c8bfd;
+  background-color: transparent;
+  color: #0c8bfd;
+}
+
+.btn-white {
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #fff;
   background-color: #fff;
   color: #0c8bfd;
   border-radius: 30px;
   font-weight: bold;
+}
+
+.btn-white:hover {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.7s;
 }
 
 /* Testimonials Section */

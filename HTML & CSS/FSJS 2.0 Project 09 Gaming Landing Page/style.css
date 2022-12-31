@@ -40,24 +40,37 @@ ul {
   margin-right: 8rem;
 }
 
+.navbar ul li:hover {
+  cursor: pointer;
+  color: #f4694c;
+  transition: all 0.7s;
+}
+
 .btn-transparent {
   background-color: transparent;
   font-size: 1rem;
-  border: none;
-  outline: none;
+  border: 1px solid transparent;
   padding: 0.5rem 1.5rem;
   color: #999a9c;
   height: 2.5rem;
+  margin-right: 1.5rem;
+}
+
+.btn-transparent:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #f4694c;
+  color: #fff;
+  transition: all 0.7s;
+  box-shadow: inset -3.5em 0 0 0 #f4694c, inset 3.5em 0 0 0 #f4694c;
 }
 
 .navbar .btn-orange {
   background-color: #f4694c;
   font-size: 1rem;
-  border: none;
-  outline: none;
+  border: 1px solid #f4694c;
   padding: 0.5rem 1.5rem;
   color: #fff;
-  /* height: 2.5rem; */
 }
 
 .section__hero--container {
@@ -83,22 +96,37 @@ ul {
 .btn-white-transparent {
   color: #fff;
   background-color: transparent;
-  font-size: 1rem;
   border: 1px solid #fff;
+  font-size: 1rem;
   padding: 0.5rem 1.5rem;
   margin-left: 1rem;
   box-sizing: border-box;
-  height: 2.5rem;
+}
+
+.btn-white-transparent:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #f4694c;
+  color: #fff;
+  transition: all 0.7s;
+  box-shadow: inset -4.5em 0 0 0 #f4694c, inset 4.5em 0 0 0 #f4694c;
 }
 
 .btn-orange {
   background-color: #f4694c;
   font-size: 1rem;
-  border: none;
-  outline: none;
+  border: 1px solid #f4694c;
   padding: 0.5rem 1.5rem;
   color: #fff;
   height: 2.5rem;
+}
+
+.btn-orange:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #f4694c;
+  border: 1px solid #fff;
+  transition: all.7s;
 }
 
 .section__hero--right {
@@ -197,9 +225,15 @@ p {
 .section__war-games .cards-wrapper .card .card-bottom .right button {
   color: #fff;
   background-color: #f4694c;
-  border: none;
-  outline: none;
+  border: 1px solid #f4694c;
   padding: 0.5rem 1rem;
+}
+
+.section__war-games .cards-wrapper .card .card-bottom .right button:hover {
+  cursor: pointer;
+  border: 1px solid #f4694c;
+  background-color: transparent;
+  transition: all 0.7s;
 }
 
 .section__war-games--bottom {
@@ -231,6 +265,13 @@ p {
   margin-top: 2.5rem;
 }
 
+.section__war-games--bottom .right .btn-orange:hover {
+  cursor: pointer;
+  border: 1px solid #f4694c;
+  background-color: transparent;
+  transition: all 0.7s;
+}
+
 .section__war-games--bottom .right .btn-orange-transparent {
   color: #f4694c;
   background-color: transparent;
@@ -240,6 +281,15 @@ p {
   margin-left: 1rem;
   box-sizing: border-box;
   height: 2.5rem;
+}
+
+.section__war-games--bottom .right .btn-orange-transparent:hover {
+  cursor: pointer;
+  background-color: #f4694c;
+  border: 1px solid #f4694c;
+  color: #fff;
+  transition: all 0.7s;
+  box-shadow: inset -4.5em 0 0 0 #f4694c, inset 4.5em 0 0 0 #f4694c;
 }
 
 .section__recommended {
@@ -303,6 +353,13 @@ p {
 
 .section__recommended--cards .card-wrapper .right button {
   margin-top: 1.5rem;
+}
+
+.section__recommended--cards .card-wrapper .right button:hover {
+  cursor: pointer;
+  border: 1px solid #f4694c;
+  background-color: transparent;
+  transition: all 0.7s;
 }
 
 /* Most Played Games Section */
@@ -433,6 +490,12 @@ p {
   color: #999a9c;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
+}
+
+.section__footer .footer-wrapper .links ul li:hover {
+  color: #f4694c;
+  cursor: pointer;
+  transform: all 0.7s;
 }
 
 .horizontal-line-wrapper {
