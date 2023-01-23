@@ -130,6 +130,8 @@ In this article I have explained,
 - Need for Git and GitHub
 - Basic Commands for Git and GitHub
 
+### Here is the quick link to the Article
+
 [Git and GitHub](https://vasuk24.hashnode.dev/git-and-github)
 
 ---
@@ -141,6 +143,8 @@ In this article I have explained,
 In this article I have explained,
 
 - Various types of Array methods of JavaScript Programming Language
+
+### Here is the quick link to the Article
 
 [JavaScript Array Methods](https://vasuk24.hashnode.dev/javascript-array-methods)
 
