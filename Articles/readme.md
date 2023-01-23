@@ -120,6 +120,32 @@ In this article I have explained,
 
 ---
 
+## **8. Git and GitHub**
+
+### **Have an Idea on Git and GitHub**
+
+In this article I have explained,
+
+- What is Version Control System
+- Need for Git and GitHub
+- Basic Commands for Git and GitHub
+
+[Git and GitHub](https://vasuk24.hashnode.dev/git-and-github)
+
+---
+
+## **9. JavaScript Array Methods**
+
+### **Have an Idea on JavaScript Array Methods**
+
+In this article I have explained,
+
+- Various types of Array methods of JavaScript Programming Language
+
+[JavaScript Array Methods](https://vasuk24.hashnode.dev/javascript-array-methods)
+
+---
+
 To Follow and Know more about me, you can check My Social Media Handles :
 
 ## My Social Media Handles :
