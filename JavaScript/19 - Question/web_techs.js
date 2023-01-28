@@ -7,4 +7,4 @@ const webTechs = [
   'MongoDB',
 ];
 
-export { webTechs };
+export webTechs;
