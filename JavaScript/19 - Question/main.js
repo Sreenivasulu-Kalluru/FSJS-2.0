@@ -3,6 +3,6 @@
 const countries = require('./countries.js');
 const webTechs = require('./web_techs.js');
 
-//Accessing variables from countries.js & webTech.js
+//Accessing variables from countries.js & web_Tech.js
 console.log(countries);
 console.log(webTechs);
