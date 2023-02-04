@@ -1,6 +1,6 @@
 # Project 8
 
-## Output Image
+## Original Image
 
 ![Original Output Image](./original%20output%20image.png)
 
