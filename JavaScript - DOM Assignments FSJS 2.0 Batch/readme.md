@@ -6,34 +6,34 @@
 
 # Project 4
 
-[Go to Project 14](./DOM%20P4/)
+[Go to Project 4](./DOM%20P4/)
 
 ---
 
 # Project 5
 
-[Go to Project 14](./DOM%20P5/)
+[Go to Project 5](./DOM%20P5/)
 
 ---
 
 # Project 6
 
-[Go to Project 14](./DOM%20P6/)
+[Go to Project 6](./DOM%20P6/)
 
 ---
 
 # Project 7
 
-[Go to Project 14](./DOM%20P7/)
+[Go to Project 7](./DOM%20P7/)
 
 ---
 
 # Project 8
 
-[Go to Project 14](./DOM%20P8/)
+[Go to Project 8](./DOM%20P8/)
 
 ---
 
 # Project 9
 
-[Go to Project 14](./DOM%20P9/)
+[Go to Project 9](./DOM%20P9/)
