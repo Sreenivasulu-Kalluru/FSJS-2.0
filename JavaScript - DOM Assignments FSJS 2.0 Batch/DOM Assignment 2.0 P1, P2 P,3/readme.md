@@ -19,6 +19,10 @@ listEl.innerHTML = `<li><a href="./index.html">Home</a></li>
 
 let list2 = document.querySelectorAll('ul');
 list2[1].innerHTML = '';
+
+//Hiding Social Media Icons
+let socialMediaIcons = document.getElementsByTagName('ul')[1];
+socialMediaIcons.style.display = 'none';
 ```
 
 ## Task 2: Achieve the following Output using JavaScript DOM Manipulation

@@ -8,8 +8,9 @@ element1.innerHTML = '<a>Hire me</a>';
 let parent = document.querySelector('header nav ul');
 parent.appendChild(element1);
 
-// let element2 = document.getElementsByTagName('a')[2];
-// element2.innerText = 'Project';
+//Hiding Social Media Icons
+const socialMediaIcons = document.getElementsByTagName('ul')[1];
+socialMediaIcons.style.display = 'none';
 
 // task 2
 document.querySelector('header nav div input').placeholder =
