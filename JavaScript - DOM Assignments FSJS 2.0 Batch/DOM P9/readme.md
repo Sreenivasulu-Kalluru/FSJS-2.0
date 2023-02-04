@@ -1,6 +1,6 @@
 # Project 9
 
-## Original Outpt
+## Original Output Image
 
 ![Original Output Image](./ass9.1-before.png)
 
