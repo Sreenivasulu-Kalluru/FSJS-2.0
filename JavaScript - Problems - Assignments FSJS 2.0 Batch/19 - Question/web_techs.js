@@ -7,4 +7,5 @@ const webTechs = [
   'MongoDB',
 ];
 
-export { webTechs };
+// exporting WebTechs variable so that we can import them in other files
+module.exports = webTechs;
