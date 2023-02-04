@@ -1,6 +1,6 @@
 # Project 8
 
-## Output Image
+## Original Output Image
 
 ![Original Output Image](./original%20output%20image.png)
 
@@ -45,7 +45,7 @@ asideEl.appendChild(newPara);
 ## JavaScript Code:
 
 ```js
-// I didn't able find any differences between the two images here, So i'm going to leave it as it is atleat for now😉. If I would be able to find the difference in futiure then I will update the code here😀
+// I didn't able find any differences between the two images here, So i'm going to leave it as it is atleat for now😉. If I would be able to find the differencec in futiure, then I will update the code here😀
 ```
 
 ---

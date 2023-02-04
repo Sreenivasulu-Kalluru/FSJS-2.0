@@ -1,6 +1,6 @@
-# Project 1
+# Project 6
 
-## Output Image
+## Original Output Image
 
 ![Original Output Image](./original%20output%20image.png)
 
@@ -11,7 +11,7 @@
 ## JavaScript Code:
 
 ```js
-// Changing header logo
+// Change header logo
 let logoHeader = document.querySelector('.logo');
 logoHeader.src = './assets/ineuron-logo.png';
 ```
@@ -25,11 +25,11 @@ logoHeader.src = './assets/ineuron-logo.png';
 ## JavaScript Code:
 
 ```js
-// Chaging app-price from $4 to $10
+// Change app-price from $4 to $10
 let appPrice = document.querySelector('.app_price span');
 appPrice.innerText = '$10';
 
-// Adding linkedIn Social Icon
+// Add linkedIn Social Icon
 let socialLinkedIn = document.createElement('div');
 socialLinkedIn.classList.add('footer_social_ico');
 socialLinkedIn.innerHTML = '<i class="fa-brands fa-linkedin"></i>';

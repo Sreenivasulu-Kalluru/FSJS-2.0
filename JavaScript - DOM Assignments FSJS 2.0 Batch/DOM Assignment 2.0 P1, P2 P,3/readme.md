@@ -1,6 +1,6 @@
 # Project 1
 
-## Original Image
+## Original Output Image
 
 ![Original Image](./firstAssignmentImage/output%20-%20original.png)
 
