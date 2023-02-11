@@ -1,4 +1,4 @@
-# Projects Live Links:
+# Project Live Links:
 
 ## [Image Light Box](https://vasu-image-light-box.netlify.app/)
 
