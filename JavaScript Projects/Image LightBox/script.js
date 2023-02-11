@@ -68,6 +68,15 @@ window.onload = () => {
         shadow.style.display = 'none';
         document.querySelector('body').style.overflow = 'auto';
       };
+
+      shadow.onclick = () => {
+        newIndex = clickImgIndex; // assigning first click img index to newIndex variable
+        prevBtn.style.display = 'block';
+        nextBtn.style.display = 'block';
+        previewBox.classList.remove('show');
+        shadow.style.display = 'none';
+        document.querySelector('body').style.overflow = 'auto';
+      };
     };
   }
 };
