@@ -1,0 +1,198 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Mukta', sans-serif;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: #3e3a3a;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* designing the weather app container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 2.5rem;
+  padding: 1.5rem;
+}
+
+.container h1 {
+  color: #3e3a3a;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+/* designing the search area */
+/* .searchData {
+  border: 1px solid black;
+} */
+
+.searchData input {
+  border: transparent;
+  background-color: rgba(255, 255, 255, 0.347);
+  border-radius: 3rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 2rem;
+}
+
+.searchData input::placeholder {
+  font-weight: bold;
+}
+
+.searchData button {
+  font-size: 2rem;
+  border: transparent;
+  background-color: rgba(255, 255, 255, 0.347);
+  padding: 0.8rem 1.8rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.searchData button:hover {
+  background-color: rgba(240, 231, 231, 0.347);
+}
+
+/* time */
+#time {
+  font-size: 2rem;
+}
+
+/* designing the city weather data */
+.cityWeatherData {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  transition: all 0.5s ease-in;
+}
+
+.card:hover {
+  cursor: pointer;
+  color: #ff0084;
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+#logoImage {
+  width: 4rem;
+}
+
+#weatherStatus {
+  margin-top: -0.7rem;
+}
+
+.card p:first-child {
+  font-size: 2.2rem;
+}
+.card p:last-child {
+  font-size: 3.2rem;
+}
+
+/* Media Queries */
+/* For Table devices max-width: 768px = 76.8rem */
+@media (max-width: 76.8rem) {
+  .container h1 {
+    font-size: 3.5rem;
+    margin-top: 0rem;
+  }
+
+  .searchData input,
+  .searchData button,
+  #time {
+    font-size: 1.5rem;
+  }
+
+  .card p:first-child {
+    font-size: 1.8rem;
+  }
+  .card p:last-child {
+    font-size: 2.8rem;
+  }
+}
+
+/* For Mobile Devices max-width: 480px = 48rem */
+@media (max-width: 48rem) {
+  .container {
+    margin-top: 5rem;
+  }
+
+  .searchData {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .details {
+    justify-content: start;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .searchData input,
+  .searchData button,
+  #time {
+    font-size: 1rem;
+  }
+
+  .card {
+    align-items: start;
+  }
+
+  .card p:first-child {
+    font-size: 1.4rem;
+  }
+  .card p:last-child {
+    font-size: 2.4rem;
+  }
+
+  #logoImage {
+    width: 3rem;
+  }
+}
