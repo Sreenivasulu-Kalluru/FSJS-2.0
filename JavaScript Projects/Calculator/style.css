@@ -58,7 +58,20 @@
   transition: all 0.3s ease-in-out;
 }
 
+.calculator .operator {
+  color: brown;
+}
+
 .calculator .equal {
   width: 115px;
   border-radius: 40px;
+  color: blue;
+}
+
+.calculator .ac {
+  color: red;
+}
+
+.calculator .de {
+  color: orange;
 }
