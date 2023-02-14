@@ -17,7 +17,9 @@ const temprature = document.getElementById('temprature');
 const logoImage = document.getElementById('logoImage');
 const weatherStatus = document.getElementById('weatherStatus');
 
-const getData = async (event) => {
+const searchBtn = document.getElementById('searchBtn');
+
+searchBtn.addEventListener('click', async (event) => {
   event.preventDefault();
   if (!inputBox.value) {
     alert('Please Enter The City Name: ');
@@ -48,4 +50,4 @@ const getData = async (event) => {
   temprature.innerHTML = data.current.temp_c;
   logoImage.src = data.current.condition.icon;
   weatherStatus.innerHTML = data.current.condition.text;
-};
+});
