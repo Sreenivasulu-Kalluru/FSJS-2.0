@@ -8,7 +8,7 @@ function calculate() {
   try {
     outputScreen.value = eval(outputScreen.value);
   } catch (e) {
-    alert('Invalid ');
+    alert('Invalid');
   }
 }
 
