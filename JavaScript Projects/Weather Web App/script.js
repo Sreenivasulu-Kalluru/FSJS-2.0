@@ -3,6 +3,9 @@
 // Function to get the data from weather app
 // Manipluate the varibe of already created element
 
+require('dotenv').config();
+const API_KEY = process.env.API_KEY;
+
 let data;
 
 const time = document.getElementById('time');
@@ -32,7 +35,7 @@ searchBtn.addEventListener('click', async (event) => {
   // Fetch Details
 
   const fetchData = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=606de02ac1b04ab99cf110116231102&q=${city}`
+    `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`
   );
 
   const orgData = await fetchData.json();
