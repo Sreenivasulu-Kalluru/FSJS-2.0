@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 50px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.app-form {
+  margin-top: 18px;
+}
+
+.app-input {
+  padding: 6px 16px;
+  /* min-width: 00px;
+  max-width: 100vw; */
+  font-size: 15px;
+  border: none;
+  outline: none;
+  outline: 1px solid #000;
+  border-radius: 5px;
+}
+
+.app-input:focus {
+  border: 1px solid #000;
+}
+
+.app-input:focus {
+  outline: 0;
+}
+
+.app-submit {
+  padding: 6px 16px;
+  font-size: 15px;
+  margin-left: 10px;
+  background-color: pink;
+  border-radius: 5px;
+  border: 2px solid pink;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.app-submit:hover {
+  opacity: 0.8;
+}
+
+.app-meal-container {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .app-meal-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .description {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .app-meal-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .app-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
