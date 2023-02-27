@@ -12,9 +12,6 @@ const App = () => {
   const getMeals = async () => {
     const result = await Axios.get(url);
     setMeals(result.data.meals);
-    if (result.data.meals === null) {
-      alert('Please Enter another meal name');
-    }
     console.log(result.data);
   };
 
