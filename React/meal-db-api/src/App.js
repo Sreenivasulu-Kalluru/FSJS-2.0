@@ -6,13 +6,21 @@ import MealCard from './MealCard';
 const App = () => {
   const [query, setQuery] = useState('');
   const [meals, setMeals] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
 
   const getMeals = async () => {
-    const result = await Axios.get(url);
-    setMeals(result.data.meals);
-    console.log(result.data);
+    try {
+      setLoading(true);
+      const result = await Axios.get(url);
+      setMeals(result.data.meals);
+      console.log(result.data);
+      setLoading(false);
+    } catch (error) {
+      setMeals(false);
+      console.error(error);
+    }
   };
 
   const onSubmit = (e) => {
@@ -35,18 +43,27 @@ const App = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <input
+        {/* <input
           type="submit"
           onClick={getMeals}
           value="Search"
           className="app-submit"
-        />
+          {...(loading ? 'loading...' : 'searching...')}
+        /> */}
+        <button type="submit" onClick={getMeals} className="app-submit">
+          {/* {loading ? <>Loading..</> : <>Search</>} */}
+          Search
+        </button>
       </form>
-      <div className="app-meal-container">
-        {meals.map((mealItem, index) => {
-          return <MealCard key={index} meal={mealItem} />;
-        })}
-      </div>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <div className="app-meal-container">
+          {meals.map((mealItem, index) => {
+            return <MealCard key={index} meal={mealItem} />;
+          })}
+        </div>
+      )}
     </div>
   );
 };
