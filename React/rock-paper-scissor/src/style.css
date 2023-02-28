@@ -35,7 +35,7 @@ h6 {
 }
 
 .info h2 {
-  font-size: 18px;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
@@ -229,6 +229,10 @@ h6 {
   .info {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .info h2 {
+    font-size: 25px;
   }
 
   .vs {
