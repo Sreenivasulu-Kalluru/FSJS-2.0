@@ -226,6 +226,11 @@ h6 {
 /* /////////////////////////////////////////////////////////////////////////// */
 
 @media (max-width: 480px) {
+  .app {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .info {
     flex-direction: column;
     gap: 20px;
