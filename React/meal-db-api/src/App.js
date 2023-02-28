@@ -43,20 +43,12 @@ const App = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        {/* <input
-          type="submit"
-          onClick={getMeals}
-          value="Search"
-          className="app-submit"
-          {...(loading ? 'loading...' : 'searching...')}
-        /> */}
         <button type="submit" onClick={getMeals} className="app-submit">
-          {/* {loading ? <>Loading..</> : <>Search</>} */}
           Search
         </button>
       </form>
       {loading ? (
-        <p>Loading...</p>
+        <p style={{ marginTop: '100px' }}>Loading...</p>
       ) : (
         <div className="app-meal-container">
           {meals.map((mealItem, index) => {
