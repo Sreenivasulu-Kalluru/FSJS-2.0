@@ -43,12 +43,13 @@ const App = () => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
+
         <button type="submit" onClick={getMeals} className="app-submit">
           Search
         </button>
       </form>
       {loading ? (
-        <p style={{ marginTop: '100px' }}>Loading...</p>
+        <p>Loading...</p>
       ) : (
         <div className="app-meal-container">
           {meals.map((mealItem, index) => {
