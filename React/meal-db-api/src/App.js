@@ -51,7 +51,7 @@ const App = () => {
         </button>
       </form>
       {loading ? (
-        <p>Loading...</p>
+        <p className="app-loading">Loading...</p>
       ) : (
         <div className="app-meal-container">
           {meals?.map((mealItem, index) => {

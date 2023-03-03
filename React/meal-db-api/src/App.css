@@ -68,6 +68,10 @@ body {
   padding: 15px;
 }
 
+.app-loading {
+  margin-top: 100px;
+}
+
 @media (max-width: 768px) {
   .app-meal-container {
     grid-template-columns: repeat(2, 1fr);
