@@ -20,7 +20,9 @@ const App = () => {
       setLoading(false);
     } catch (error) {
       // setPokemon(false);
-      // console.error(error);
+      alert('Could not find Pokemon😢, Try again!');
+      setLoading(false);
+      console.error(error);
     }
   };
 
@@ -36,13 +38,12 @@ const App = () => {
         src="https://seeklogo.com/images/P/Pokemon-logo-497D61B223-seeklogo.com.png"
         alt="pokemon-logo"
       />
-
       <form className="app-form" onSubmit={onSubmit}>
         <input
           type="text"
           className="app-input"
           placeholder="Search Pokemon by id or name..."
-          value={query}
+          value={query.toLowerCase()}
           onChange={(e) => setQuery(e.target.value)}
         />
 
