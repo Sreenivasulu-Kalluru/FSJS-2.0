@@ -42,7 +42,7 @@ const App = () => {
           type="text"
           className="app-input"
           placeholder="Search Meal..."
-          value={query}
+          value={query.toLowerCase()}
           onChange={(e) => setQuery(e.target.value)}
         />
 
