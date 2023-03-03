@@ -18,7 +18,9 @@ const App = () => {
       console.log(result.data.meals);
       setLoading(false);
     } catch (error) {
-      setMeals(false);
+      // setMeals(false);
+      alert('Could not find meal😢, Try again!');
+      setLoading(false);
       console.error(error);
     }
   };
