@@ -15,7 +15,7 @@ const App = () => {
       setLoading(true);
       const result = await Axios.get(url);
       setMeals(result.data.meals);
-      console.log(result.data);
+      console.log(result.data.meals);
       setLoading(false);
     } catch (error) {
       setMeals(false);
@@ -39,7 +39,7 @@ const App = () => {
         <input
           type="text"
           className="app-input"
-          placeholder="Search for a Meal..."
+          placeholder="Search Meal..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
@@ -52,7 +52,7 @@ const App = () => {
         <p>Loading...</p>
       ) : (
         <div className="app-meal-container">
-          {meals.map((mealItem, index) => {
+          {meals?.map((mealItem, index) => {
             return <MealCard key={index} meal={mealItem} />;
           })}
         </div>
