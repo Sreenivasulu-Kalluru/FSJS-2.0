@@ -14,6 +14,9 @@ const App = () => {
     try {
       setLoading(true);
       const result = await Axios.get(url);
+      if (!result.ok) {
+        alert('Could not find meal😢, Try again!');
+      }
       setMeals(result.data.meals);
       console.log(result.data.meals);
       setLoading(false);
