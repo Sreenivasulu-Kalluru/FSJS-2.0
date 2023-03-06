@@ -72,6 +72,12 @@ body {
   margin-top: 100px;
 }
 
+.error {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .app-meal-container {
     grid-template-columns: repeat(2, 1fr);
