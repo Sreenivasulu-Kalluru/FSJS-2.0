@@ -7,7 +7,6 @@ const App = () => {
   const [query, setQuery] = useState('');
   const [meals, setMeals] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [fetchError, setFetchError] = useState(null);
 
   const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
 
@@ -15,17 +14,13 @@ const App = () => {
     try {
       setLoading(true);
       const result = await Axios.get(url);
-      if (!result.ok) throw Error('Meal not found! Please Try again');
       setMeals(result.data.meals);
       console.log(result.data.meals);
       setLoading(false);
-      setFetchError(null);
     } catch (err) {
       // setMeals(false);
-      // alert('Could not find meal😢, Try again!');
+      alert('Could not find meal😢, Try again!');
       setLoading(false);
-      console.error(err);
-      setFetchError(err.message);
     }
   };
 
@@ -63,12 +58,6 @@ const App = () => {
             return <MealCard key={index} meal={mealItem} />;
           })}
         </div>
-      )}
-      {fetchError && (
-        <p
-          className="error"
-          style={{ color: 'red', margin: '0 auto' }}
-        >{` ${fetchError}`}</p>
       )}
     </div>
   );
