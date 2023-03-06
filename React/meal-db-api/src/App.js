@@ -15,11 +15,14 @@ const App = () => {
       setLoading(true);
       const result = await Axios.get(url);
       setMeals(result.data.meals);
+      if (result.data.meals === null) {
+        alert('Could not find meal😢, Try again!');
+      }
       console.log(result.data.meals);
       setLoading(false);
     } catch (err) {
       // setMeals(false);
-      alert('Could not find meal😢, Try again!');
+
       setLoading(false);
     }
   };
