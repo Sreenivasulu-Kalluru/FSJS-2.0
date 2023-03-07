@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
-import Cards from './Cards';
-import Footer from './Footer';
+import Navbar from './components/Navbar';
+import Cards from './components/Cards';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
 
       {/* This element will render either <About/> when the url is "/about" or <Contact/> when the url is "/contact" or null if it is "/" */}
       <Outlet />
-      <div className="flex justify-around bg-grey py-10">
+      <div className="flex flex-wrap justify-around bg-grey py-10 ">
         <Cards
           imgSrc="https://avatars.githubusercontent.com/u/11613311?v=4"
           name="Hitesh Choudhary"
