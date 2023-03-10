@@ -4,7 +4,6 @@ import App from './App';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const appRouter = createBrowserRouter([
