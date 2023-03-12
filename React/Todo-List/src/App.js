@@ -102,7 +102,7 @@ const App = () => {
           <List items={list} removeItem={removeItem} editItem={editItem} />
           <div className="text-center">
             <button className="btn btn-warning" onClick={clearList}>
-              Clear
+              Clear All
             </button>
           </div>
         </div>
