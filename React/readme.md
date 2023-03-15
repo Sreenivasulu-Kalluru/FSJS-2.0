@@ -11,3 +11,5 @@
 ## 5 [Movie App](https://vasu-movie-api-react-app.netlify.app/)
 
 ## 6 [React Router Project-1](https://vasu-react-router-project-1.netlify.app/)
+
+## 6 [Rodo App Redux Toolkit](https://vasu-todo-app-redux-toolkit.netlify.app/)
