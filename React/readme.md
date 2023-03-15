@@ -12,4 +12,4 @@
 
 ## 6 [React Router Project-1](https://vasu-react-router-project-1.netlify.app/)
 
-## 6 [Todo App Redux Toolkit](https://vasu-todo-app-redux-toolkit.netlify.app/)
+## 7 [Todo App Redux Toolkit](https://vasu-todo-app-redux-toolkit.netlify.app/)
