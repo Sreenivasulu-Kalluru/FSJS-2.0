@@ -10,7 +10,7 @@ export const AddTaskReducer = createSlice({
     Remove: (state, action) => {
       return state.filter((addTask, id) => id !== action.payload);
     },
-    Clear: (state) => {
+    Clear: () => {
       return [];
     },
   },

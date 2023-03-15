@@ -27,7 +27,7 @@ function App() {
 
   const clearAll = () => {
     dispatch(Clear());
-    toast('All items are removed from the list');
+    toast('All Tasks are removed from the list');
   };
 
   return (
