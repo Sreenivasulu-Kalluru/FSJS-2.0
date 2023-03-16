@@ -13,3 +13,5 @@
 ## 6 [React Router Project-1](https://vasu-react-router-project-1.netlify.app/)
 
 ## 7 [Todo App Redux Toolkit](https://vasu-todo-app-redux-toolkit.netlify.app/)
+
+## 8 [CRUD With Redux Toolkit](https://crud-with-redux-toolkit.netlify.app/)
